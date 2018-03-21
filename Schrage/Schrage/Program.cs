@@ -54,15 +54,17 @@ namespace Schrage
                     t = N.First.r;
                     continue;
                  }
+                 //Si = t
                 Task e = G.Dequeue();
                 k = k + 1;
                 t = t + e.p;
                 cmax = Math.Max(cmax, t + e.q);
+                //Di =  t + e.q
 
-             }
+            }
 
 
-           Console.WriteLine(cmax);
+            Console.WriteLine(cmax);
             Console.ReadLine();
         }
     }
